@@ -1,0 +1,172 @@
+body{
+  background-color:#F4F4F4;
+  color:#555;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.6em;
+  margin:0;
+}
+
+.container{
+  width:85%;
+  margin:auto;
+  overflow:hidden; /*It hides the scrollbars*/
+}
+
+.container h1{
+  display:inline-block;
+}
+
+#main-header{
+  background-color:#252525;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: right;
+  background-position-y: top;
+  background-size: 70px 70px;
+  color:#FFF;
+}
+
+#rocket-animation{
+  float:right;
+  margin-top: -53px;
+  margin-right: 18px;
+  width: 40px;
+  height: 52px;
+  animation-name: launch;
+  animation-duration: 7s;
+  position: relative;
+}
+
+#rocket-animation img{
+  width: 100%;
+  height: auto;
+}
+
+#navbar{
+  float:right;
+  width:40%;
+  background:#252525;
+  color:#FFF;
+}
+
+#navbar ul{
+  margin: 21.44px 0;
+  padding:0;
+  list-style:none;
+}
+
+#navbar li{
+  display:inline;
+}
+
+#navbar a{
+  color:#FFF;
+  text-decoration:none;
+  font-size:18px;
+  padding-right:15px;
+}
+
+#showcase{
+  background-image:url('../imgs/showcase.jpg');
+  background-position:center right;
+  min-height:300px;
+  margin-bottom:30px;
+  text-align:center;
+}
+
+#showcase h1{
+  color:#FFF;
+  font-size:50px;
+  line-height:1.6em;
+  padding-top:30px;
+}
+
+#main{
+  float:left;
+  width:70%;
+  padding:0 30px;
+  box-sizing:border-box;
+}
+
+#sidebar{
+  float:right;
+  width:30%;
+  background:#252525;
+  color:#FFF;
+  padding:10px;
+  box-sizing:border-box;
+}
+
+#main-footer{
+  background:#252525;
+  background-image: url("../imgs/new_earth.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: 545px;
+  background-position-x: 18px;
+  background-size: 70px 70px;
+  color:#FFF;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+
+a{
+  color:#FFF;
+}
+
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 10px;
+}
+
+.row {
+  margin: 0 -5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+  padding: 16px;
+  text-align: center;
+  background-color: #FFF;
+  height:250px;
+}
+
+.contact-icons {
+  width: 60px;
+  height: 60px;
+}
+
+@media(max-width:600px){
+  #main{
+    width:100%;
+    float:none;
+  }
+
+  #sidebar{
+    width:100%;
+    float:none;
+  }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@keyframes launch {
+  0%  {right:0px;}
+  16% {transform:rotate(-90deg);right:0px;}
+  50% {right:10000px;transform:rotate(-90deg);content:url("../imgs/new_black_blue_rocket_with_flame.jpg");width:40px;height:60px;}
+  51% {right:-85px;width:40px;height:52px;content:url("../imgs/new_black_blue_rocket.jpg");}
+  100% {right:0px;}
+}
