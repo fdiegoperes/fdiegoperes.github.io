@@ -100,12 +100,6 @@ body{
 
 #main-footer{
   background:#252525;
-  background-image: url("../imgs/new_earth.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-y: 545px;
-  background-position-x: 18px;
-  background-size: 70px 70px;
   color:#FFF;
   text-align:center;
   padding:20px;
